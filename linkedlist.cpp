@@ -29,11 +29,22 @@ using namespace std;
                                                                                                            tail=tail->next;
                                                                                   }
                                                                                            }
+                                                                                   void display()
+                                                                                            {
+                                                                                              node* tmp;
+                                                                                                   tmp=head;
+                                                                                     if(tmp!=NULL)
+                                                                                     {
+                                                                                         cout<<tmp->data<<endl;
+                                                                                       tmp=tmp->next;
+                                                                                     
                                                                                                     };
                                                                                      int main()
                                                                                      {
                                                                                         linked_list a;
                                                                                                    a.add_node(1);
                                                                                                    a.add_node(2);
+                                                                                                       a.display();
                                                                                        return 0;
                                                                                        }
+
